@@ -126,4 +126,4 @@ class DQNAgent:
         if os.path.exists(MODEL_PATH):
             self.model.load_state_dict(torch.load(MODEL_PATH, map_location=self.device))
             self.model.eval()
-            print(f"✅ Loaded model from {MODEL_PATH}")
+            print(f"Loaded model from {MODEL_PATH}")
