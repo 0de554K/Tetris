@@ -76,6 +76,7 @@ class Tetris:
         if self.tetromino.blocks[0].pos.y == INIT_POS_OFFSET[1]:
             pg.time.wait(300)
             return True
+        return False
 
     def check_tetromino_landing(self):
         if self.tetromino.landing:
